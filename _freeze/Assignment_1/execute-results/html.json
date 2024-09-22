@@ -1,0 +1,15 @@
+{
+  "hash": "3f0cd582fa756585a3c6559982a29ac2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Assignment_1\"\nauthor: \"Noah De Bie\"\n---\n\n\n\nThis assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end. This visual editor thing feels kind of like Notion, from my limited computer knowledge I'm guessing they both use markdown somehow. Seems powerful if one learns to use it.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load the iris dataset\n\ndata(iris)\n\n# Create a scatterplot\n\nplot(iris$Sepal.Length, iris$Sepal.Width,\ncol = iris$Species,\npch = 19,\nmain = \"Iris Sepal Length vs Width\",\nxlab = \"Sepal Length\",\nylab = \"Sepal Width\")\n\n# Add a legend\n\nlegend(\"topright\", legend = levels(iris$Species),\ncol = 1:3, pch = 19, title = \"Species\")\n```\n\n::: {.cell-output-display}\n![](Assignment_1_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n::: {.callout-caution appearance=\"minimal\"}\nDisclaimer: The code was created with the help of AI.\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

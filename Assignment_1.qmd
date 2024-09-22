@@ -1,0 +1,30 @@
+---
+title: "Assignment_1"
+author: "Noah De Bie"
+---
+
+This assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end. This visual editor thing feels kind of like Notion, from my limited computer knowledge I'm guessing they both use markdown somehow. Seems powerful if one learns to use it.
+
+```{r}
+# Load the iris dataset
+
+data(iris)
+
+# Create a scatterplot
+
+plot(iris$Sepal.Length, iris$Sepal.Width,
+col = iris$Species,
+pch = 19,
+main = "Iris Sepal Length vs Width",
+xlab = "Sepal Length",
+ylab = "Sepal Width")
+
+# Add a legend
+
+legend("topright", legend = levels(iris$Species),
+col = 1:3, pch = 19, title = "Species")
+```
+
+::: {.callout-caution appearance="minimal"}
+Disclaimer: The code was created with the help of AI.
+:::
