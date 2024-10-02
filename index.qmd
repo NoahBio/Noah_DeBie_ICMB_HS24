@@ -1,0 +1,47 @@
+Hey there :)
+
+This website contains all the assignments completed for the Course 'Introduction to computational modeling of behavior'.
+
+```{r}
+#load required packages
+library(cowplot)
+library(ggplot2)
+
+# Number of birds in the flock
+n_birds <- 20 
+
+# Randomly decide which birds are flying and which are sitting
+set.seed(Sys.time()) # Optional: to simulate different outcomes each time without being too random during development
+bird_type <- sample(c("flying", "sitting"), size = n_birds, replace = TRUE)
+
+# Create a data frame with random positions, sizes, and angles
+bird_data <- data.frame(
+  x = runif(n_birds, -1, 1),     # Random x positions
+  y = runif(n_birds, -1, 1),     # Random y positions
+  size = runif(n_birds, 10, 50), # Random bird sizes
+  type = bird_type,              # Flying or sitting
+  angle = ifelse(bird_type == "flying",runif(n_birds, -30, 30), 0) # Flying birds upright, sitting birds with small angle variation
+)
+
+# Create a base ggplot
+p <- ggplot() + 
+  xlim(-1, 1) + ylim(-1, 1) +  # Set axis limits
+  theme_void()                 # Remove background and axes
+
+# Add birds to the plot
+for (i in 1:n_birds) {
+  bird <- ifelse(bird_data$type[i] == "flying", "🕊️", "🐦") # Different emoji for flying and sitting birds
+  p <- p + 
+    cowplot::draw_label(bird, 
+                        x = bird_data$x[i], 
+                        y = bird_data$y[i], 
+                        size = bird_data$size[i], 
+                        angle = bird_data$angle[i],  # Apply random rotation to sitting birds
+                        hjust = 0.5, vjust = 0.5)
+}
+
+# Display the flock of birds
+p
+
+
+```

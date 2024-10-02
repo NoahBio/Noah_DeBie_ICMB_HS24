@@ -1,9 +1,6 @@
----
-title: "Assignment_1"
-author: "Noah De Bie"
----
+y--- title: "Assignment_1" author: "Noah De Bie" ---
 
-This assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end (Edit 3 hours later: It was not so).
+This assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end (Edit: 3 hours later: *It was not so*).
 
 ```{r}
 # Load the iris dataset
