@@ -5,3 +5,5 @@ datasets
 grDevices
 graphics
 stats
+cowplot
+ggplot2

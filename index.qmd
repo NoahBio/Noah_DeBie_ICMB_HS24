@@ -1,3 +1,9 @@
+---
+title: "About Page"
+
+author: "Noah De Bie"
+---
+
 Hey there :)
 
 This website contains all the assignments completed for the Course 'Introduction to computational modeling of behavior'.

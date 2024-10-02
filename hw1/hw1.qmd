@@ -1,4 +1,8 @@
-y--- title: "Assignment_1" author: "Noah De Bie" ---
+---
+title: "Assignment_1"
+
+author: "Noah De Bie"
+---
 
 This assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end (Edit: 3 hours later: *It was not so*).
 
