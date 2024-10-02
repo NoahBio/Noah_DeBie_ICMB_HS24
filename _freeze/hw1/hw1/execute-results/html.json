@@ -1,0 +1,15 @@
+{
+  "hash": "5efb193efe0049667d045ac86d7efdfb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "y--- title: \"Assignment_1\" author: \"Noah De Bie\" ---\n\nThis assignment is the result of a process that started with much skepticism about it's feasability but (touch wood) seems to be nearing its end (Edit: 3 hours later: *It was not so*).\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load the iris dataset\n\ndata(iris)\n\n# Create a scatterplot\n\nplot(iris$Sepal.Length, iris$Sepal.Width,\ncol = iris$Species,\npch = 19,\nmain = \"Iris Sepal Length vs Width\",\nxlab = \"Sepal Length\",\nylab = \"Sepal Width\")\n\n# Add a legend\n\nlegend(\"topright\", legend = levels(iris$Species),\ncol = 1:3, pch = 19, title = \"Species\")\n```\n\n::: {.cell-output-display}\n![](hw1_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n::: {.callout-caution appearance=\"minimal\"}\nDisclaimer: The code was created with the help of AI.\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
